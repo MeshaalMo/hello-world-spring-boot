@@ -20,15 +20,15 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                script {
-                    // Run tests inside the Docker container if needed
-                    // You can customize this step based on your testing requirements
-                    // sh "docker run $DOCKER_IMAGE mvn test"
-                }
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         script {
+        //             // Run tests inside the Docker container if needed
+        //             // You can customize this step based on your testing requirements
+        //             // sh "docker run $DOCKER_IMAGE mvn test"
+        //         }
+        //     }
+        // }
 
         stage('Deploy') {
             steps {
