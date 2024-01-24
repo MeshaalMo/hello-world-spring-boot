@@ -34,8 +34,8 @@ pipeline {
             steps {
                 script {
                     // Stop and remove the previous container, if it exists
-                    sh "docker stop $CONTAINER_NAME || true"
-                    sh "docker rm $CONTAINER_NAME || true"
+                    // sh "docker stop $CONTAINER_NAME || true"
+                    // sh "docker rm $CONTAINER_NAME || true"
 
                     // Run the Docker container
                     sh "docker run -d --name $CONTAINER_NAME -p 8081:8080 $DOCKER_IMAGE"
