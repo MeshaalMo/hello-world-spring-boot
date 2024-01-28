@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image using the specified Dockerfile
-                    sh "docker build -t $DOCKER_IMAGE -f $DOCKERFILE_PATH ."
+                    sh "mvn clean install"
                 }
             }
         }
