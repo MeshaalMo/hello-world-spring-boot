@@ -7,7 +7,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'test_2'
         DOCKERFILE_PATH = 'Dockerfile'
-        CONTAINER_NAME = 'c2'
+        CONTAINER_NAME = 'c2' 
     }
 
     stages {
